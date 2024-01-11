@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+  font-family: 'Rubik Doodle Shadow', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #419c59;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.grid img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.points-row {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  justify-content: center;
+  padding-bottom: 30px;
+  
+}
+
+.points-row div {
+  width: 50%;
+  text-align: center;
+}
+
+
+.main-menu {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  background-color: #419c59;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 2px 77px -20px rgba(0,0,0,0.7);
+
+}
+
+.endModal-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.main-menu div {
+  height: 50%;
+}
+
+.main-menu p {
+  font-size: 4rem;
+  color: black;
+}
+
+.btn {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-size: 4.5rem;
+
+}
